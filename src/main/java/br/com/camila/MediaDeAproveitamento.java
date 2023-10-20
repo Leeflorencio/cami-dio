@@ -29,18 +29,18 @@ public class MediaDeAproveitamento {
         String conceito = "";
 
         if(media >= 9.0 && media <= 10.0){
-            conceito = "A";
+            conceito = "A " + " - APROVADO";
         } else if (media >= 7.5 && media <= 9.0 ) {
-            conceito = "B";
+            conceito = "B " + " - APROVADO";
         } else if (media >= 6.0 && media <= 7.5) {
-            conceito = "C";
+            conceito = "C " + " - APROVADO";
         } else if (media >= 4.0 && media <= 6.0) {
-            conceito = "D";
+            conceito = "D " + " - REPROVADO";
         } else if (media >= 0 && media <= 4.0){
-            conceito = "E";
+            conceito = "E " + " - REPROVADO";
         }
 
-        System.out.println("Média: " + media);
-        System.out.println("Conceito " + conceito);
+        System.out.println("Nota 1: " + nota1 + "\nNota 2: " + nota2 + "\n" + "Média: " + media);
+        System.out.println("Conceito: " + conceito);
     }
 }
